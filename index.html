@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ANIMANGA</title>
+    </head>
+    <body>
+        <header>
+            <div class="to-top">
+                <button class="top" onclick="toTop()" id="myBtn" title="Go to top"><img style="filter: invert(1);" src="top.png"></button>
+            </div>
+            <div class="add-task-container">
+                <input type="text" id="taskInput" placeholder="Nome da obra">
+                <button onclick="addTask(1)">+ ANIME</button>
+                <button onclick="addTask(2)">+ MANGA</button>
+                <button onclick="addTask(0)">+ </button>
+            </div>    
+            <div class="modeSwitch">
+                <label class="ui-switch">
+                    <input id="ui-switch" type="checkbox">
+                    <div class="slider">
+                      <div class="circle"></div>
+                    </div>
+                  </label>                  
+            </div>
+        </header>
+
+        <div class="todo-container">
+            <div class="column" id="column1">
+                <h2>ANIME</h2>
+                <ul id="list1" class="task-list"></ul>
+            </div>
+            <div class="column" id="column2">
+                <h2>MANGA</h2>
+                <ul id="list2" class="task-list"></ul>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
